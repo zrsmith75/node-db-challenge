@@ -13,7 +13,22 @@
   },
   "devDependencies": {},
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4555
+    }
   },
   "repository": {
     "type": "git",
